@@ -235,6 +235,51 @@ Read multiple reports within the same category to understand how different malwa
 
 ---
 
+## 🔧 Extraction Tool
+
+This repository includes `simple_extractor.py`, a utility for extracting password-protected malware archives commonly found in research repositories.
+
+### Features:
+- **Safe Extraction**: Uses system tools (`unzip`, `7z`) for reliable archive handling
+- **Password Detection**: Automatically tries common malware research passwords (`infected`, `malware`, `virus`)
+- **Batch Processing**: Recursively processes entire directory trees
+- **In-Place Extraction**: Extracts files alongside archives by default
+- **Logging**: Comprehensive logging to `malware_extraction_simple.log`
+- **Dry-Run Mode**: Preview operations without extracting
+
+### Usage:
+
+```bash
+# Extract all archives in current directory
+python3 simple_extractor.py
+
+# Extract from specific path (e.g., downloaded malware repositories)
+python3 simple_extractor.py -p /path/to/MalwareSourceCode-main
+
+# Test with first 5 archives only
+python3 simple_extractor.py --test 5
+
+# Preview without extracting
+python3 simple_extractor.py --dry-run
+
+# Specify custom extraction directory
+python3 simple_extractor.py -p ./archives -e ./extracted
+```
+
+### Requirements:
+- Python 3.6+
+- `unzip` (for ZIP files)
+- `7z` or `7za` (for 7Z files)
+
+### ⚠️ Safety Warning:
+This tool extracts **live malware samples**. Always use in isolated environments:
+- ✅ Run only in air-gapped virtual machines
+- ✅ Disable network connectivity
+- ✅ Use snapshot/restore capabilities
+- ✅ Never extract on production systems
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! If you'd like to add new malware analysis reports:
