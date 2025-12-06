@@ -1,6 +1,5 @@
 # C2 Exfiltration Techniques: Executive Summary
 
-**Analysis Date**: November 24, 2025  
 **Findings Analyzed**: 3 comprehensive case studies  
 **MITRE ATT&CK Coverage**: T1041, T1071.001, T1573.001, T1105, T1132.001  
 **Malware Families**: rBot, Zeus/Zbot, Win32.SpyBot
@@ -541,6 +540,5 @@ Rule 3: Inbound Server Connections
 ---
 
 **Analysis Version**: 1.0  
-**Last Updated**: November 24, 2025  
 **Contributing Findings**: 3 detailed case studies (rBot, Zeus, Win32.SpyBot)  
 **Total Documentation**: ~35,000 words across 3 findings + this executive summary

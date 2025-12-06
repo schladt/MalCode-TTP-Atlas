@@ -1,8 +1,6 @@
 # Windows Scheduled Task Malware Analysis - Executive Summary
 
 ## Analysis Overview
-**Date**: November 18, 2025  
-**Analyst**: AI Security Researcher  
 **Scope**: Three malware repositories containing Windows malware samples  
 **Focus**: MITRE ATT&CK T1053.005 - Scheduled Task/Job: Scheduled Task
 

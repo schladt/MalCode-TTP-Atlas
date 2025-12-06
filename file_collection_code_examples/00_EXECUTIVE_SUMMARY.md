@@ -1,6 +1,5 @@
 # File Collection Techniques: Executive Summary
 
-**Analysis Date**: November 24, 2025  
 **Findings Analyzed**: 3 comprehensive case studies  
 **MITRE ATT&CK Coverage**: T1005, T1119, T1083, T1552.001, T1555.003  
 **Malware Families**: AngstStealer, PredatorTheStealer, Zeus/Zbot
@@ -556,6 +555,5 @@ Rule: Unauthorized Wallet Access
 ---
 
 **Analysis Version**: 1.0  
-**Last Updated**: November 24, 2025  
 **Contributing Findings**: 3 detailed case studies (AngstStealer, PredatorTheStealer, Zeus/Zbot)  
 **Total Documentation**: ~30,000 words across 3 findings + this executive summary

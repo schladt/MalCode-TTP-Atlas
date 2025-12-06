@@ -1,9 +1,6 @@
 # Process Injection Techniques (T1055) - Executive Summary
 
-**Analysis Date:** 2024  
 **MITRE ATT&CK Technique:** T1055 - Process Injection  
-**Repositories Analyzed:** Malware-Collection-master, MalwareSourceCode-main, theZoo-master  
-**Total Findings:** 7 distinct injection techniques across 8 malware families
 
 ---
 

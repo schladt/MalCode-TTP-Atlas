@@ -1,6 +1,5 @@
 # Persistence Techniques: Executive Summary
 
-**Analysis Date**: November 24, 2025  
 **Findings Analyzed**: 8 comprehensive case studies  
 **MITRE ATT&CK Coverage**: T1547.001 (Registry Run Keys), T1543.003 (Windows Services), T1053.005 (Scheduled Tasks)  
 **Malware Families**: Zeus/Zbot, XBot, xTBot, Win32.Ganja, Win32.Rose, Trochilus RAT, Carberp, r77
@@ -896,6 +895,5 @@ Rule: Persistence Re-establishment Loop
 ---
 
 **Analysis Version**: 1.0  
-**Last Updated**: November 24, 2025  
 **Contributing Findings**: 8 detailed case studies (Zeus, XBot, xTBot, Win32.Ganja, Win32.Rose, Trochilus, Carberp service, Carberp/r77 scheduled tasks)  
 **Total Documentation**: ~50,000+ words across 8 findings + this executive summary
