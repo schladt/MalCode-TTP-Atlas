@@ -20,69 +20,6 @@ MalCode-TTP-Atlas is a curated collection of **46 detailed malware analysis repo
 This project bridges the gap between theoretical ATT&CK descriptions and real-world malware implementations, providing security researchers, threat hunters, and detection engineers with actionable intelligence derived from actual malicious code.
 
 ---
-
-## 📂 Repository Structure
-
-```
-MalCode-TTP-Atlas/
-├── c2_exfiltration_code_examples/       # Command & Control / Exfiltration (T1041, T1071)
-│   ├── 00_EXECUTIVE_SUMMARY.md
-│   ├── 01_rBot_NetDevil_Binary_Upload_Raw_Sockets.md
-│   ├── 02_Zeus_Botnet_RC4_Encrypted_HTTP_POST_Data_Exfiltration.md
-│   └── 03_Win32_SpyBot_Reverse_HTTP_Server_File_Exfiltration.md
-│
-├── credential_theft_code_examples/      # Credential Access (T1555, T1539)
-│   ├── 00_EXECUTIVE_SUMMARY.md
-│   ├── 01_Sin_Stealer_Chrome_Credential_Cookie_Theft_DPAPI.md
-│   ├── 02_Sin_Stealer_Discord_Token_LevelDB_Extraction.md
-│   └── 03_PryntStealer_Telegram_Session_tdata_Directory_Harvesting.md
-│
-├── defense_impairment_code_examples/   # Defense Evasion (T1562)
-│   ├── 00_EXECUTIVE_SUMMARY.md
-│   ├── 01_IWorm_WarGames_Antivirus_Process_Termination.md
-│   ├── 02_Win32_Plague_Windows_Firewall_Registry_Service_Disabling.md
-│   └── 03_Reptile_DBot_Multi_Product_AV_Service_Stopping_Registry_Disabling.md
-│
-├── encryption_code_examples/            # Impact - Data Encrypted for Impact (T1486)
-│   ├── 00_EXECUTIVE_SUMMARY.md
-│   ├── 01_Conti_Ransomware_v3_ChaCha20_Hybrid_Encryption.md
-│   ├── 02_Jigsaw_Ransomware_AES256_Recursive_Encryption.md
-│   ├── 03_SkynetLocker_Ransomware_AES_RSA_Parallel_Encryption.md
-│   ├── 04_SintaLocker_CryPy_Python_AES_C2_Integration.md
-│   └── 05_Hidden-tear_Educational_AES256_Ransomware_POC.md
-│
-├── file_collection_code_examples/       # Collection (T1005, T1083)
-│   ├── 00_EXECUTIVE_SUMMARY.md
-│   ├── 01_AngstStealer_FileZilla_XML_Credential_Extraction.md
-│   ├── 02_PredatorTheStealer_Multi_Wallet_Cryptocurrency_Harvesting.md
-│   └── 03_Zeus_Zbot_Automated_Wildcard_File_Search_Recursive_Harvesting.md
-│
-├── injection_code_examples/             # Defense Evasion / Privilege Escalation (T1055)
-│   ├── 00_EXECUTIVE_SUMMARY.md
-│   ├── 01_RedLine_Stealer_Process_Hollowing_RunPE.md
-│   ├── 02_TinyNuke_Browser_Process_Hollowing_Manual_PE_Mapping.md
-│   ├── 03_Zeus_Zbot_Remote_PE_Injection_Relocation_Fixup.md
-│   ├── 04_Buhtrap_Classic_DLL_Injection_CreateRemoteThread.md
-│   ├── 05_Zeus_Zbot_Mass_Process_Enumeration_User_Context_Filtering.md
-│   ├── 06_Rovnix_Bootkit_Kernel_Mode_APC_Queue_Injection.md
-│   └── 07_BlackLotus_UEFI_Bootkit_Section_Mapping_Injection.md
-│
-├── persistence_code_examples/           # Persistence (T1547, T1053)
-│   ├── 00_EXECUTIVE_SUMMARY.md
-│   ├── 01_xTBot_Windows_Scheduled_Task_XML_Registration.md
-│   ├── 02_XBot_Windows_Service_Creation_Modification_Fallback.md
-│   ├── 03_xTBot_Multi_Location_Registry_Run_Key_Redundant_Autostart.md
-│   ├── ... (9 total reports)
-│
-└── task_code_examples/                  # Execution (T1053)
-    ├── 00_EXECUTIVE_SUMMARY.md
-    ├── 01_Gh0st_RAT_Remote_Code_Execution_Thread_Injection.md
-    ├── 02_Zeus_Zbot_Command_Shell_Execution_STARTUPINFO_Hidden.md
-    ├── ... (13 total reports)
-```
-
----
-
 ## 🎯 MITRE ATT&CK Coverage
 
 | Tactic | Technique | # Reports | Examples |
@@ -151,7 +88,7 @@ MalCode-TTP-Atlas/
 
 ## 📋 Report Format
 
-Each analysis follows a standardized structure (600-1,200 words):
+Each analysis follows a standardized structure:
 
 ```markdown
 # [Malware Family] - [Specific Technique]
@@ -185,7 +122,7 @@ This project analyzes malware from the following public repositories:
 
 - **theZoo** - Malware research collection ([GitHub](https://github.com/ytisf/theZoo))
 - **Malware-Collection** - Historical malware samples ([GitHub](https://github.com/Da2dalus/Malware-Collection))
-- **MalwareSourceCode** - Curated malware source archive
+- **Vx Underground** - Curated malware source archive ([GitHub](https://github.com/vxunderground/MalwareSourceCode))
 
 **Note:** File paths in reports are relative to their source repositories. To access the original code:
 
@@ -307,6 +244,7 @@ Contributions are welcome! If you'd like to add new malware analysis reports:
 - [YARA Documentation](https://yara.readthedocs.io/)
 - [theZoo Malware Repository](https://github.com/ytisf/theZoo)
 - [Malware Bazaar](https://bazaar.abuse.ch/)
+- [Vx Underground](https://github.com/vxunderground/MalwareSourceCode)
 
 ---
 
@@ -343,10 +281,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**⭐ Star this repository if you find it useful for security research!**
-
 ---
 
-*Last Updated: November 2025*  
 *Version: 1.0*  
 *Total Reports: 46*
