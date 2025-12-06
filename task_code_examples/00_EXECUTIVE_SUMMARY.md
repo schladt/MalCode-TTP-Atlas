@@ -10,7 +10,7 @@ This analysis identified **13 distinct malware samples** that implement Windows 
 
 ---
 
-## Finding Categories
+## TTP Categories
 
 ### Category 1: Command-Line schtasks.exe Usage (10 findings)
 Most common implementation method using `schtasks.exe` command-line utility.
@@ -31,21 +31,21 @@ Alternative persistence using WMI timers (functional equivalent to scheduled tas
 
 ## Key Findings Summary
 
-| # | Malware Family | Type | Schedule Type | Privilege | Stealth Level |
-|---|---------------|------|---------------|-----------|---------------|
-| 1 | Prynt Stealer | RAT/Stealer | ONLOGON | HIGHEST | Medium |
-| 2 | RedLine Stealer | Stealer | DAILY (1min repeat) | Normal | High |
-| 3 | Predator Miner | Cryptominer | ONCE (9999h, 1min) | Normal | Medium |
-| 4 | Pentagon RAT | RAT | MINUTE (every 1) | Normal | Low |
-| 5 | Comet RAT | RAT | Configurable | Normal | High |
-| 6 | AsyncRAT | RAT | ONLOGON | HIGHEST | High |
-| 7 | Quasar RAT | RAT | ONLOGON | HIGHEST | High |
-| 8 | Carberp Botnet | Banking Trojan | LOGON (COM API) | INTERACTIVE_TOKEN | Very High |
-| 9 | Carberp MS10-092 | Privilege Escalation | LOGON (UAC Bypass) | SYSTEM | Very High |
-| 10 | APT34 PoisonFrog | APT Dropper | MINUTE (dual tasks) | USER + SYSTEM | High |
-| 11 | WIPE32 (PowerShell) | Wiper | DAILY (timed) | HIGHEST | Medium |
-| 12 | WIPE32 (Batch) | Wiper | ONLOGON | HIGHEST | High |
-| 13 | WMIGhost | Backdoor | WMI Timer | SYSTEM | Very High |
+| # | Malware Family | Type | TTP Category | Schedule Type | Privilege | Stealth Level |
+|---|---------------|------|--------------|---------------|-----------|---------------|
+| 1 | Prynt Stealer | RAT/Stealer | Command-Line | ONLOGON | HIGHEST | Medium |
+| 2 | RedLine Stealer | Stealer | Command-Line | DAILY (1min repeat) | Normal | High |
+| 3 | Predator Miner | Cryptominer | Command-Line | ONCE (9999h, 1min) | Normal | Medium |
+| 4 | Pentagon RAT | RAT | Command-Line | MINUTE (every 1) | Normal | Low |
+| 5 | Comet RAT | RAT | Command-Line | Configurable | Normal | High |
+| 6 | AsyncRAT | RAT | Command-Line | ONLOGON | HIGHEST | High |
+| 7 | Quasar RAT | RAT | Command-Line | ONLOGON | HIGHEST | High |
+| 8 | Carberp Botnet | Banking Trojan | COM API | LOGON (COM API) | INTERACTIVE_TOKEN | Very High |
+| 9 | Carberp MS10-092 | Privilege Escalation | COM API | LOGON (UAC Bypass) | SYSTEM | Very High |
+| 10 | APT34 PoisonFrog | APT Dropper | Command-Line | MINUTE (dual tasks) | USER + SYSTEM | High |
+| 11 | WIPE32 (PowerShell) | Wiper | Command-Line | DAILY (timed) | HIGHEST | Medium |
+| 12 | WIPE32 (Batch) | Wiper | Command-Line | ONLOGON | HIGHEST | High |
+| 13 | WMIGhost | Backdoor | WMI Event | WMI Timer | SYSTEM | Very High |
 
 ---
 
